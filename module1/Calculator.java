@@ -18,8 +18,11 @@ public class Calculator {
 				System.out.println("Thanks for using Calculator");
 				break;
 			}
+			else if(option>5|| option<1) {
+				System.out.println("Choose the correct option among 1/2/3/4/5");
+			}
 			else {
-				System.out.println("Enter the first number");
+					
 				num1=sc.nextInt();
 				System.out.println("Enter the Second number");
 				num2=sc.nextInt();
@@ -40,10 +43,7 @@ public class Calculator {
 					float n1=num1;
 					float n2=num2;
 					float res=n1/n2;
-					System.out.println("The Divison of "+num1+" and "+num2+" is: "+res);
-				}
-				else {
-					System.out.println("Choose the correct option among 1/2/3/4/5");
+					System.out.println("The Divison of "+num1+" by "+num2+" is: "+res);
 				}
 
 			}
