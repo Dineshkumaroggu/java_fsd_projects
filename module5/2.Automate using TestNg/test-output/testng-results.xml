@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-01T16:57:04 IST" name="Suite" finished-at="2022-10-01T16:57:40 IST" duration-ms="36380">
+    <groups>
+    </groups>
+    <test started-at="2022-10-01T16:57:04 IST" name="Test" finished-at="2022-10-01T16:57:40 IST" duration-ms="36380">
+      <class name="com.simplilearn.demo.AmazonAutomation">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.demo.AmazonAutomation@4d14b6c2]" started-at="2022-10-01T16:57:04 IST" name="beforeMethod" finished-at="2022-10-01T16:57:06 IST" duration-ms="1865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addtocart()[pri:0, instance:com.simplilearn.demo.AmazonAutomation@4d14b6c2]" started-at="2022-10-01T16:57:06 IST" name="addtocart" finished-at="2022-10-01T16:57:12 IST" duration-ms="6358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addtocart -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.demo.AmazonAutomation@4d14b6c2]" started-at="2022-10-01T16:57:12 IST" name="afterMethod" finished-at="2022-10-01T16:57:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.demo.AmazonAutomation@4d14b6c2]" started-at="2022-10-01T16:57:12 IST" name="beforeMethod" finished-at="2022-10-01T16:57:14 IST" duration-ms="1738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="login()[pri:0, instance:com.simplilearn.demo.AmazonAutomation@4d14b6c2]" started-at="2022-10-01T16:57:14 IST" name="login" finished-at="2022-10-01T16:57:18 IST" duration-ms="4853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.demo.AmazonAutomation@4d14b6c2]" started-at="2022-10-01T16:57:19 IST" name="afterMethod" finished-at="2022-10-01T16:57:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.demo.AmazonAutomation@4d14b6c2]" started-at="2022-10-01T16:57:19 IST" name="beforeMethod" finished-at="2022-10-01T16:57:20 IST" duration-ms="1561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="register()[pri:0, instance:com.simplilearn.demo.AmazonAutomation@4d14b6c2]" started-at="2022-10-01T16:57:20 IST" name="register" finished-at="2022-10-01T16:57:24 IST" duration-ms="4155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.demo.AmazonAutomation@4d14b6c2]" started-at="2022-10-01T16:57:24 IST" name="afterMethod" finished-at="2022-10-01T16:57:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.demo.AmazonAutomation@4d14b6c2]" started-at="2022-10-01T16:57:24 IST" name="beforeMethod" finished-at="2022-10-01T16:57:26 IST" duration-ms="1737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="search()[pri:0, instance:com.simplilearn.demo.AmazonAutomation@4d14b6c2]" started-at="2022-10-01T16:57:26 IST" name="search" finished-at="2022-10-01T16:57:40 IST" duration-ms="14023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.demo.AmazonAutomation@4d14b6c2]" started-at="2022-10-01T16:57:40 IST" name="afterMethod" finished-at="2022-10-01T16:57:40 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.simplilearn.demo.AmazonAutomation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
