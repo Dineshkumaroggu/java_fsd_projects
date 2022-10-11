@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-11T14:11:47 IST" name="Default suite" finished-at="2022-10-11T14:12:52 IST" duration-ms="64361">
+  <suite started-at="2022-10-11T16:34:04 IST" name="Default suite" finished-at="2022-10-11T16:35:13 IST" duration-ms="69939">
     <groups>
     </groups>
-    <test started-at="2022-10-11T14:11:47 IST" name="Default test" finished-at="2022-10-11T14:12:52 IST" duration-ms="64361">
-      <class name="com.simplilearn.demo.AppTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.demo.AppTest@54e1c68b]" started-at="2022-10-11T14:11:47 IST" name="beforeMethod" finished-at="2022-10-11T14:11:52 IST" duration-ms="4128" status="PASS">
+    <test started-at="2022-10-11T16:34:04 IST" name="Default test" finished-at="2022-10-11T16:35:13 IST" duration-ms="69939">
+      <class name="com.simplilearn.demo.NewTest_firefox">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.demo.NewTest_firefox@413d1baf]" started-at="2022-10-11T16:34:04 IST" name="beforeMethod" finished-at="2022-10-11T16:34:10 IST" duration-ms="6487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="search()[pri:0, instance:com.simplilearn.demo.AppTest@54e1c68b]" started-at="2022-10-11T14:11:52 IST" name="search" finished-at="2022-10-11T14:12:52 IST" duration-ms="60119" status="PASS">
+        <test-method signature="search()[pri:0, instance:com.simplilearn.demo.NewTest_firefox@413d1baf]" started-at="2022-10-11T16:34:10 IST" name="search" finished-at="2022-10-11T16:35:13 IST" duration-ms="63346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.demo.AppTest@54e1c68b]" started-at="2022-10-11T14:12:52 IST" name="afterMethod" finished-at="2022-10-11T14:12:52 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.demo.NewTest_firefox@413d1baf]" started-at="2022-10-11T16:35:13 IST" name="afterMethod" finished-at="2022-10-11T16:35:13 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.simplilearn.demo.AppTest -->
+      </class> <!-- com.simplilearn.demo.NewTest_firefox -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

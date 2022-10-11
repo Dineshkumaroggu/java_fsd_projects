@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.simplilearn.demo.AppTest">
+      <class name="com.simplilearn.demo.NewTest_firefox">
         <methods>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="search"/>
         </methods>
-      </class> <!-- com.simplilearn.demo.AppTest -->
+      </class> <!-- com.simplilearn.demo.NewTest_firefox -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

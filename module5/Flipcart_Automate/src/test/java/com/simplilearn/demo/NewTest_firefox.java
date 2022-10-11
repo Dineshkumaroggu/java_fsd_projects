@@ -1,5 +1,4 @@
 package com.simplilearn.demo;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -7,10 +6,11 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-public class AppTest {
+public class NewTest_firefox {
 	
 WebDriver driver;
 
@@ -34,8 +34,8 @@ public void search() {
     System.out.println("sucessfully logged in");
    
     //searching iphone13
-    driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[1]/div[1]/div[2]/div[2]/form/div/div/input")).sendKeys("iPhone 13");
-    driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[1]/div[1]/div[2]/div[2]/form/div/div/input")).sendKeys(Keys.ENTER);
+    driver.findElement(By.xpath("/html/body/div/div/div[1]/div[1]/div[2]/div[2]/form/div/div/input")).sendKeys("iPhone 13");
+    driver.findElement(By.xpath("/html/body/div/div/div[1]/div[1]/div[2]/div[2]/form/div/div/input")).sendKeys(Keys.ENTER);
     System.out.println("sucesfully searched iphone 13");
     
    //scroll down
@@ -44,19 +44,6 @@ public void search() {
     System.out.println("Sucesfully scrolled");
     
    
-   //loading image testing
-    WebElement i = driver.findElement
-    (By.xpath("//*[@id=\"container\"]/div/div[3]/div[1]/div[2]/div[2]/div/div/div/a/div[1]/div[1]/div/div/img"));
- 
-    Boolean k = (Boolean) ((JavascriptExecutor)driver) .executeScript("return arguments[0].complete " + "&& typeof arguments[0].naturalWidth != \"undefined\" " + "&& arguments[0].naturalWidth > 0", i);
-
-    if (k) {
-       System.out.println("Image loaded");
-    } else {
-       System.out.println("Image not loaded ");
-    }
-
-    
     
     
     //scroll upto end of page
@@ -73,8 +60,8 @@ public void search() {
   @BeforeMethod
 	public void beforeMethod() {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\Mycompany\\java-fsd\\practice\\phase5\\required\\chromedriver_win32\\chromedriver.exe");
-		driver= new ChromeDriver();
+	  System.setProperty("webdriver.gecko.driver", "D:\\Mycompany\\java-fsd\\practice\\phase5\\required\\geckodriver.exe");
+		driver= new FirefoxDriver();
 	}
   
 
