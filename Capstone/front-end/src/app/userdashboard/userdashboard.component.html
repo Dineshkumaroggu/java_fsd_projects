@@ -1,0 +1,131 @@
+
+<style>
+    .custom {
+    width: 200px !important;
+}
+</style>
+<div class="fluid-container text-center p-5 " style="background-color:rgb(222, 235, 208)">
+   
+    <h1>Welcome to M-Aadhaar page</h1>
+    <br><br><br>
+    <div class="row">
+      <div class="col">
+        <img src="assets/images/aadhar.png" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <div class="d-grid gap-2 col-8 mx-auto">
+            <button type="button" class="btn btn-primary  btn-lg rounded custom"  data-toggle="modal" data-target="#exampleModal">Update Aadhaar</button><br><br>
+            <button type="button" class="btn btn-secondary btn-lg rounded custom" data-toggle="modal" data-target="#exampleModal2">Duplicate Aadhaar</button><br><br>
+            <button type="button" class="btn btn-success btn-lg rounded custom" data-toggle="modal" data-target="#exampleModal">New Aadhaar</button><br><br>
+            <button type="button" class="btn btn-danger btn-lg rounded custom" data-toggle="modal" data-target="#exampleModal3">Delete Aadhaar</button><br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal for creation -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div style="width: 500px; margin: auto;" class="modal-body">
+            <div class="submit-form">
+              <div *ngIf="!isBookAdded">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input class="form-control" id="name" required [(ngModel)]="user.name" name="email"/>
+                </div>
+        
+                <div class="form-group">
+                    <label for="dob">Date of birth</label>
+                    <input class="form-control" id="dob" required [(ngModel)]="user.dob" name="dob"/>
+                  </div>
+        
+                  <div class="form-group">
+                    <label for="address">Address</label>
+                    <input class="form-control" id="address" required [(ngModel)]="user.address" name="address" />
+                  </div>
+          
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input class="form-control" id="email" required [(ngModel)]="user.email" name="email" />
+                </div>
+        
+                <div class="form-group">
+                    <label for="mobile">Mobile</label>
+                    <input class="form-control" id="mobile" required [(ngModel)]="user.mobile" name="mobile"/>
+                  </div>
+          
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <input class="form-control" id="gender" required [(ngModel)]="user.gender" name="gender" />
+                  </div>
+                <button (click)="addUser()" class="btn btn-success">Create</button>
+              </div>
+          
+              <div *ngIf="isBookAdded">
+                <h3>Data added SUccessFully</h3>
+        
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Modal for duplicate -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4 style="color:green ;">Your Aadhhar card has been successfully duplicated. It will be delivered to a registered address in 30 working days.
+            </h4><br>
+            <h4 style="color:rgb(126, 126, 246);">Thank you for using m-Aadhaar services!</h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal for delete -->
+  <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Delete Aadhaar Card</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4 style="color:green ;">Your request was placed successfully</h4><br>
+          <h4 style="color: red;">The Aadhaar card gets deleted once the admin gets noticed</h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  

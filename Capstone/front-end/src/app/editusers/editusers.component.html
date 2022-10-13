@@ -1,0 +1,59 @@
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sucess</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+           <h1>Your Request Processed Sucessfully</h1>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">DOB</th>
+            <th scope="col">Address</th>
+            <th scope="col">Email id</th>
+            <th scope="col">Mobile Number </th>
+            <th scope="col">Gender</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+
+
+            <tr *ngFor="let u of users">
+                <td>{{u.id}}</td>
+                <td>{{u.name}}</td>
+                <td>{{u.dob}}</td> 
+                <td>{{u.address}}</td>
+                <td>{{u.email}}</td>
+                <td>{{u.mobile}}</td>
+                <td>{{u.gender}}</td>
+                <td>
+                <div class="row">
+                  <div class="col"><button  type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Approve</button></div>
+                  <div class="col"><button type="button" (click)='BookDelete(u.id)' class="btn btn-danger">Delete</button></div>
+             </div>
+            </td>
+            </tr>
+        </tbody>
+      </table>
+
+</div>
+
+

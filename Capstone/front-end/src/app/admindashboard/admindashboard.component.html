@@ -1,0 +1,34 @@
+<!-- <div>
+    <h2>Welcome to home page admin {{user}}</h2>
+    <a routerLink="addProduct">Add Product</a> |
+    <a routerLink="findAllProduct">View Product</a>
+    <br/>
+    <hr/>
+        <router-outlet></router-outlet>
+    <hr/>
+  
+    <br/>
+    <input type="button" value="logout" (click)="logout()"/>
+</div> -->
+
+<div class="fluid container mt-5 ">
+    <h1 class="text-center">Welcome Aadhaar Admin</h1><br><br>
+    <div class="row text-center">
+      <div class="col text-center">
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title"><a routerLink="/allusers" style="color:white ;">List All Users</a></h5>
+              <p class="card-text">Here we Can view all the available Users in System</p>
+            </div>
+      </div>
+      </div>
+      <div class="col text-center">
+        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title"><a routerLink="/approve" style="color:white ;">Approve New Users</a></h5>
+              <p class="card-text">Here we can approve and review modifications</p>
+            </div>
+      </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,38 @@
+<div class="container mt-5">
+    <div class="card" style="padding: 20px;">
+        <form [formGroup]="loginRef" (ngSubmit)="signIn()">
+            <input type="text"
+            ngModel
+            name="userName"
+            id="userName"
+            placeholder="Enter your username"
+            class="form-control mb-3"
+            formControlName="emailid"
+            >
+
+            <input type="password"
+            ngModel
+            name="userPassword"
+            id="userPassword"
+            placeholder="Enter your password"
+            class="form-control mb-3"
+            formControlName="password"
+            >
+            <div class="row text-center">
+                <div class="col"><input type="radio" name="typeOfUser" value="admin" formControlName="typeOfUser"/><h5>admin</h5>
+                </div>
+                <div class="col"><input type="radio" name="typeOfUser" value="user" formControlName="typeOfUser"/><h5>user</h5>
+                </div>
+            </div>
+            <input type="submit"
+             value="signIn"
+            class="btn btn-success form-control rounded-0">
+            <br><br>
+            <input type="reset" value="reset"
+            class="btn btn-primary form-control rounded-0">
+        </form>
+        <br>
+        <span style="color:red">{{msg}}</span><br/>
+        <a class="text-center" routerLink="/signUp"><h4>SignUp</h4></a>
+    </div>
+</div>

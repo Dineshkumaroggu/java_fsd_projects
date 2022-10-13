@@ -1,0 +1,30 @@
+<div class="container mt-5">
+
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">DOB</th>
+            <th scope="col">Address</th>
+            <th scope="col">Email id</th>
+            <th scope="col">Mobile Number </th>
+            <th scope="col">Gender</th>
+          </tr>
+        </thead>
+        <tbody>
+
+
+            <tr *ngFor="let u of users">
+                <td>{{u.id}}</td>
+                <td>{{u.name}}</td>
+                <td>{{u.dob}}</td> 
+                <td>{{u.address}}</td>
+                <td>{{u.email}}</td>
+                <td>{{u.mobile}}</td>
+                <td>{{u.gender}}</td>
+            </tr>
+        </tbody>
+      </table>
+
+</div>
